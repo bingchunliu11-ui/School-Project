@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BookReview Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
 
+  <!-- Header -->
+  <header class="hero">
+    <a href="/" class="home-link" aria-label="Home">
+      <img src="images/home.svg" alt="Home" class="home-icon">
+      <div class="home-tooltip" role="group" aria-hidden="true">
+        <ul>
+          <li>Home</li>
+          <li>Reviews</li>
+          <li>Genres</li>
+          <li>Top Picks</li>
+          <li>Sign In</li>
+        </ul>
+      </div>
+    </a>
+    <img src="images/hero.svg" alt="Hero illustration" class="hero-img">
+    <div class="hero-decor">
+      <img src="images/decor1.svg" alt="decor" class="decor">
+      <img src="images/decor2.svg" alt="decor" class="decor">
+      <img src="images/decor3.svg" alt="decor" class="decor">
+    </div>
+    <h1>Find Your Next Favorite Book</h1>
+    <p>Simple and honest book reviews made for students and readers.</p>
+    <a href="#" class="btn">Read Reviews</a>
+  </header>
+
+  <!-- Problem & Solution -->
+  <section class="section">
+    <h2>Why BookReview Hub?</h2>
+    <p>
+      Many students and readers struggle to choose good books because there are too many options.
+      BookReview Hub helps by providing clear and simple reviews so readers can find books they enjoy.
+    </p>
+  </section>
+
+  <!-- Features -->
+  <section class="section light">
+    <h2>What We Offer</h2>
+    <div class="features">
+      <div class="card"><img src="images/feature1.svg" alt="icon" class="feature-icon">Short and easy-to-read reviews</div>
+      <div class="card"><img src="images/feature2.svg" alt="icon" class="feature-icon">Book recommendations by genre</div>
+      <div class="card"><img src="images/feature3.svg" alt="icon" class="feature-icon">Student-friendly language</div>
+      <div class="card"><img src="images/feature4.svg" alt="icon" class="feature-icon">Updated with new books</div>
+    </div>
+  </section>
+
+  <!-- Interactive -->
+  <section class="section">
+    <h2>Not Sure What to Read?</h2>
+    <p class="center">
+      Take our fun quiz: <strong>“What book should you read next?”</strong>
+    </p>
+  </section>
+
+  <!-- Trust -->
+  <section class="section light">
+    <h2>What Readers Say</h2>
+    <p class="testimonial">
+      “This website helped me find great books!” – Student Reader ★★★★☆
+    </p>
+  </section>
+
+  <!-- Browse by Genre -->
+  <section class="section light">
+    <h2>Browse by Genre</h2>
+    <div class="genre-list">
+      <div class="genre">Fantasy — Adventures and magic for imaginative readers.</div>
+      <div class="genre">Realistic Fiction — Stories about everyday lives and emotions.</div>
+      <div class="genre">Mystery — Whodunits and page-turning puzzles.</div>
+      <div class="genre">Non-Fiction — True stories, biographies, and facts.</div>
+    </div>
+  </section>
+
+  <!-- Top Picks -->
+  <section class="section">
+    <h2>Top Picks</h2>
+    <div class="book-grid">
+      <article class="book-card">
+        <img src="images/book1.svg" alt="The Hidden Library" class="book-thumb">
+        <h3>The Hidden Library</h3>
+        <p class="muted">by A. Reader</p>
+        <p>Short review: A comfy adventure with warm characters and a gentle mystery.</p>
+      </article>
+      <article class="book-card">
+        <img src="images/book2.svg" alt="City Stories" class="book-thumb">
+        <h3>City Stories</h3>
+        <p class="muted">by B. Writer</p>
+        <p>Short review: Relatable characters and everyday drama that feels honest.</p>
+      </article>
+      <article class="book-card">
+        <img src="images/book3.svg" alt="Science Explorers" class="book-thumb">
+        <h3>Science Explorers</h3>
+        <p class="muted">by C. Scholar</p>
+        <p>Short review: Clear facts and fun experiments for curious minds.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section light">
+    <h2>How It Works</h2>
+    <ol>
+      <li>We read and summarize books in simple language for students and young readers.</li>
+      <li>We rate books on enjoyment, difficulty, and age-appropriateness to help you choose.</li>
+      <li>Use our genre filters and top picks to find a book that fits your interests.</li>
+    </ol>
+  </section>
+
+  <!-- Sign In -->
+  <section class="section sign-in light">
+    <h2>Sign In</h2>
+    <div class="sign-in-wrapper">
+      <img src="images/signin.svg" alt="Sign in illustration" class="sign-in-img">
+      <form class="signin-form" action="#" method="post">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="you@example.com" required>
+
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" placeholder="••••••••" required>
+
+        <div class="signin-row">
+          <label class="muted"><input type="checkbox" name="remember"> Remember me</label>
+        </div>
+
+        <button class="btn" type="submit">Sign In</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Subscribe -->
+  <section class="section subscribe">
+    <h2>Get Weekly Picks</h2>
+    <form class="subscribe-form" action="#" method="post">
+      <input type="email" name="email" placeholder="Your email" required>
+      <button class="btn" type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 BookReview Hub | Designed for students
+  </footer>
+
+</body>
+</html>
