@@ -1,0 +1,341 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+.hero {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Home icon (top-left) */
+.home-link {
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  display: block;
+  z-index: 30;
+}
+.home-icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .home-link { left: 12px; top: 12px; }
+  .home-icon { width: 34px; height: 34px; }
+}
+
+/* Home tooltip (shows site pages) */
+.home-tooltip {
+  position: absolute;
+  left: 52px;
+  top: 6px;
+  min-width: 140px;
+  background: #ffffff;
+  color: #111;
+  padding: 8px 10px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.14);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-6px);
+  transition: opacity 180ms ease, transform 180ms ease;
+  font-size: 14px;
+  z-index: 40;
+}
+.home-tooltip ul { margin: 0; padding: 0; list-style: none; }
+.home-tooltip li { padding: 6px 2px; }
+.home-tooltip li + li { border-top: 1px solid rgba(0,0,0,0.06); }
+
+/* show tooltip when hovering or focusing the home link */
+.home-link:hover .home-tooltip,
+.home-link:focus-within .home-tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+@media (max-width: 640px) {
+  .home-tooltip { left: 46px; top: 8px; min-width: 120px; font-size: 13px; }
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Sections */
+.section {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  position: relative;
+}
+.section h2::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 4px;
+  background: #ffd54f;
+  margin: 12px auto 0 auto;
+  border-radius: 2px;
+}
+
+.light {
+  background-color: #ffffff;
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Text helpers */
+.center {
+  text-align: center;
+}
+
+.testimonial {
+  text-align: center;
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #e0e0e0;
+  font-size: 14px;
+}
+
+/* Genres */
+.genre-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+.genre {
+  background: #fafafa;
+  padding: 14px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Top picks / book cards */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.book-card {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+.book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+.book-card h3 {
+  margin: 0 0 6px 0;
+}
+.muted {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Subscribe form */
+.subscribe-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 12px;
+}
+.subscribe-form input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 220px;
+}
+
+/* Image styles */
+.hero-img {
+  display: block;
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 18px auto;
+  border-radius: 6px;
+}
+.book-thumb {
+  display: block;
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+  margin: 0 auto 12px auto;
+}
+
+/* Hero decorations */
+.hero-decor {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.hero-decor .decor {
+  width: 120px;
+  height: auto;
+  opacity: 0.95;
+  border-radius: 6px;
+}
+
+/* Sign-in styles */
+.sign-in-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 28px;
+  align-items: center;
+  justify-content: center;
+}
+.sign-in-img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 8px;
+}
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.signin-form label {
+  font-size: 14px;
+  color: #333;
+}
+.signin-form input[type="email"],
+.signin-form input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.signin-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (max-width: 840px) {
+  .sign-in-wrapper { grid-template-columns: 1fr; }
+  .sign-in-img { max-width: 320px; margin: 0 auto; }
+}
+
+/* Decorative hero layers using pseudo elements */
+.hero::before {
+  content: "";
+  position: absolute;
+  left: -8%;
+  top: -28%;
+  width: 60%;
+  height: 60%;
+  background: radial-gradient(circle at 20% 20%, rgba(99,102,241,0.16), transparent 40%);
+  transform: rotate(-12deg);
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  right: -4%;
+  bottom: -18%;
+  width: 50%;
+  height: 50%;
+  background: radial-gradient(circle at 80% 80%, rgba(234,88,12,0.08), transparent 40%);
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .hero-img { max-width: 100%; }
+  .hero-decor { gap: 6px; }
+  .hero-decor .decor { width: 88px; }
+  .feature-icon { width: 40px; height: 40px; }
+  .book-thumb { max-width: 120px; }
+  .section { padding: 28px 12px; }
+  .hero { padding: 40px 12px; }
+}
+
+/* Feature icons */
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.card { 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f0f0f0;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
